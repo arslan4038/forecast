@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Welcome to Forecast App</title>
+</head>
+<body>
+
+<!-- quick sample -->
+<h1>Forecast Web App</h1>
+<h3>Please enter the city you want to see the current weather</h3>
+<form action="/api/weatherbyname">
+    <label>City Name</label>
+    <input type="text" name="cityName"/>
+    <button type="submit">Get Weather</button>
+</form>
+
+<h3>Please enter the lat and lon of city you want to see the current weather</h3>
+<form action="/api/weatherbylatlon">
+    <label>Lat</label>
+    <input type="text" name="lat"/>
+    <label>Lon</label>
+    <input type="text" name="lon"/>
+    <button type="submit">Get Weather</button>
+</form>
+
+<hr>
+</body>
+</html>

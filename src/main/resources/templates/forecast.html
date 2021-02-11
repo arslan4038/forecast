@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Forecast</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Forecast App</h1>
+<hr>
+<p>Current weather conditions in <b>[[${weatherView.cityName}]]</b> on <i>[[${weatherView.date}]]</i></p>
+<p><b><i>[[${weatherView.overallDescription}]]</i></b></p>
+<p>With a temperature of <b>[[${weatherView.tempC}]] C</b> (<b>[[${weatherView.tempF}]] F</b>)</b></p>
+<p>Sunrise time: <b>[[${weatherView.sunrise}]]</b></p>
+<p>Sunset time: <b>[[${weatherView.sunset}]]</b></p>
+
+<a href="/">Back to home page</a>
+</body>
+</html>
